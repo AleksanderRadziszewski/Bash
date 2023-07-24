@@ -10,7 +10,6 @@ msg="The following Script ran to error: $1 at $current_date"
 if [ $python_status -ne 0 ]; then
 echo "$msg" | mail -v -s "Scipt Failure" wayefi3795@carpetra.com;
 
-else
 msg="A script has ran to error:
 Server: $HOSTNAME
 Script Name: $1
